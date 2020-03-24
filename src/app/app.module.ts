@@ -1,6 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import {
+//   MdToolbarModule,
+//   MdTabsModule,
+//   MdButtonModule,
+//   MdInputModule,
+//   MdDatepickerModule,
+//   MdNativeDateModule,
+//   MdCheckboxModule,
+//   MdRadioModule
+// } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -13,7 +24,7 @@ import { FilterComponent } from './filter/filter.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, BrowserAnimationsModule ],
   declarations: [ AppComponent, HelloComponent, HomeComponent, SearchComponent, HeaderComponent, CartIconComponent, SortComponent, FilterComponent, ShoppingListComponent ],
   bootstrap:    [ AppComponent ]
 })
